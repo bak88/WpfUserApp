@@ -20,11 +20,11 @@
                     <Button HorizontalAlignment="Right" Content="Authorization" Style="{StaticResource MaterialDesignFlatButton}" />
                 </Grid>
 
-                <TextBox materialDesign:HintAssist.Hint=" Enter Login" Style="{StaticResource MaterialDesignFloatingHintTextBox}" />
-                <PasswordBox materialDesign:HintAssist.Hint=" Enter password" Style="{StaticResource MaterialDesignFloatingHintPasswordBox}" />
-                <PasswordBox materialDesign:HintAssist.Hint=" Repeat password" Style="{StaticResource MaterialDesignFloatingHintPasswordBox}" />
-                <TextBox materialDesign:HintAssist.Hint=" Enter Email" Style="{StaticResource MaterialDesignFloatingHintTextBox}" />
-                <Button Content="Register" Margin="0 20" />
+                <TextBox x:Name="textBoxLogin" materialDesign:HintAssist.Hint=" Enter Login" Style="{StaticResource MaterialDesignFloatingHintTextBox}" />
+                <PasswordBox x:Name="passBox" materialDesign:HintAssist.Hint=" Enter password" Style="{StaticResource MaterialDesignFloatingHintPasswordBox}" />
+                <PasswordBox x:Name="passBoxRepeat" materialDesign:HintAssist.Hint=" Repeat password" Style="{StaticResource MaterialDesignFloatingHintPasswordBox}" />
+                <TextBox x:Name="textBoxEmail" materialDesign:HintAssist.Hint=" Enter Email" Style="{StaticResource MaterialDesignFloatingHintTextBox}" />
+                <Button Content="Register" Margin="0 20" Click="ButtonRegClick" />
             </StackPanel>
         </Border>
 
